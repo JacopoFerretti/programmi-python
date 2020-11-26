@@ -1,0 +1,13 @@
+
+votic1 = int(input("quanti voti ha il candidato 1"))
+votic2 = int (input("quanti voti ha il candidato 2"))
+totale = int(votic1 + votic2)
+percentualec1 = ((votic1/totale)*100)
+percentualec2 = ((votic2/totale)*100)
+print("la prima percentuale è =", percentualec1)
+print("la seconda percentuale è =", percentaulec2)
+if (votic1>votic2):
+   print("ha vinto  il candidato 1)
+elif (votic1<votic2)
+     print("ha vinto il candidato 2)
+else:print("hanno pareggiato")
