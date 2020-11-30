@@ -1,0 +1,24 @@
+listaA = []
+listaB = []
+studenti = 0
+shot = 0
+a = 0
+
+
+while a == 0:
+    studenti += 1
+    shot += 1
+    print("nome della persona", studenti,"? ")
+    name = input()
+    listaA.append(name)
+    print("lancio della persona", studenti,"? ")
+    shot = int(input())
+    listaB.append(shot)
+    parola = (input("per uscire scrivi off, se non vuoi uscire premi un altro numero qualsiasi "))
+    if parola == "off":
+        break
+   
+
+listaB.reverse()
+
+print("il valore maggiore è", listaB[0])
