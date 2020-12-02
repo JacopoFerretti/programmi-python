@@ -2,7 +2,7 @@ Lnomi = []
 Lmax = []
 Lmin = []
 Lesc = []
-is_running = True
+x = 1 
 città = 0
 Temperatura_max = 0
 Temperatura_min = 0
@@ -10,18 +10,18 @@ Temperatura_escursione = 0
 print(" Scrivi il valore dell'escursione termica?")
 Vpref = int(input())
 
-while is_running == True:
+while x == 1:
     città += 1
     Temperatura_max += 1
     Temperatura_min += 1
     Temperatura_escursione += 0
-    print("Scrivi il nome della città", città,"? ")
+    print("Scrivi il nome della città", città,": ")
     nomi = input()
     Lnomi.append(nomi)
-    print("Scrivi la Ttemperatura massima registrata oggi a", nomi,"? ")
+    print("Scrivi la Ttemperatura massima registrata oggi a", nomi,": ")
     temp1 = int(input())
     Lmax.append(temp1)
-    print("Scrivi la Ttemperatura minima registrata oggi a", nomi,"? ")
+    print("Scrivi la Ttemperatura minima registrata oggi a", nomi,": ")
     temp2 = int(input())
     Lmin.append(temp2)
     escursione_termica = temp1 - temp2
@@ -29,13 +29,10 @@ while is_running == True:
          Lesc.append(escursione_termica)
     else:
          pass
-    numxuscire = int(input("se hai terminato l'elenco di città puoi smettere premento 0, se invece vuoi continuare premi un tasto qualsiasi "))
-    if numxuscire == 0:
-        is_running = False
-    else:
-        pass
+    parola = input("se hai terminato l'elenco di città puoi smettere scrivendo off, se invece vuoi continuare premi un tasto qualsiasi: ")
+    if parola == "off":
+        break
     
-
-
+numerocit = len(Lesc)
 Lesc.reverse()
-print("le escursioni termiche maggiori del valore  sono:", Lesc[:])
+print("il numero delle città che hanno superato il valore prefissato sono", numerocit, "e gli altri valori sono:", Lesc)
