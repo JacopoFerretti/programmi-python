@@ -1,0 +1,12 @@
+lista = []
+while True:
+    parola = input("Inserisci una parola per verificare se è palindroma:" )
+    lista.append(parola)
+    lista.reverse()
+    lettera = input()
+    lettera2 = lettera
+    if lettera == lettera2:
+        print("La parola è palindroma")
+        break
+    else:
+        print("la parola non è palindroma")
