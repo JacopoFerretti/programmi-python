@@ -1,1 +1,15 @@
-
+listaA = []
+listaB = []
+x = True
+while x == True:
+    print("Scrivi delle parole da mettere nella lista, premi 1 se vuoi uscire")
+    parola1 = input()
+    if parola1 == "1":
+        x = False
+    else:
+        listaA.append(parola1)
+T = len(listaA)
+for a in range(T):
+    numero2 = len(listaA[a])
+    listaB.append(numero2)
+print(listaB)
