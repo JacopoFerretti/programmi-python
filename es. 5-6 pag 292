@@ -1,0 +1,20 @@
+#Elenca proprità e metodi della classe Prodotto
+#Definisci il metodo assegna_prezzo della classe Prodotto
+
+
+class Prodotto:
+    def __init__(self , nome,  numero , provenienza, prezzo):
+        self.nome = nome
+        self.numero = numero
+        self.prezzo = prezzo
+        self.provenienza = provenienza
+
+    def assegna_prezzo(self):
+        self.prezzo = self.prezzo*self.numero
+
+    def informazioni(self):
+        print("Il prodotto" , self.nome , "proviene da" , self.provenienza , "e costa" , self.prezzo , "€")
+
+p1 = Prodotto(" Matos Melone" , 2 ,"Africa" , 15)
+p1.assegna_prezzo()
+p1.informazioni()
