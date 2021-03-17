@@ -8,10 +8,10 @@ Considera le seguenti aliquote:
 Scrivi un programma che legga un reddito da tastiera e calcoli l'importo dell'imposta sul reddito e la tassazione media.
 '''
 
-input_reddito = int(input("Inserire qui il proprio reddito per ricavare la tassazione media e l'imposta da pagare: "))
+input_reddito = int(input("Inserire qui il reddito per ricavare la tassazione media e l'imposta da pagare: "))
 
 
-if input_reddito <= 15000: #Definisco gli scaglioni.
+if input_reddito <= 15000: 
     imposta_reddito = input_reddito * 0.23
     tassazione_media = imposta_reddito/input_reddito * 100
     print("L'imposta da applicare sul reddito è", imposta_reddito,"€","e la tassazione media è al", tassazione_media,"%")
