@@ -1,0 +1,21 @@
+class Clock:
+    def __init__(self, ore, minuti, secondi):
+        self.ore = ore 
+        self.minuti = minuti
+        self.secondi = secondi
+    
+        
+    def ore_(self):
+        ore = 0
+        minuti = 0
+        secondi = 0
+
+    def visualizza_Clock(self):
+        print("Sono le" ,self.ore, "e" , self.minuti, "con" ,self.secondi ,"secondi")
+
+Clock = Clock(16,6,34)
+Clock.ore_()
+Clock.visualizza_Clock()
+
+class Contratto_telefonico:
+    def __init__(self, nome , cognome ,età ,)
